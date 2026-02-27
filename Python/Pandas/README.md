@@ -21,5 +21,4 @@ When we combine multiple series it creates a dataframe.
 Data Frames can be created using
 >1. Lists
 >2. Dictionaries
->3. Numpy Arrays
 
