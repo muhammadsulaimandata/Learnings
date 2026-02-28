@@ -22,3 +22,8 @@ Data Frames can be created using
 >1. Lists
 >2. Dictionaries
 
+Further we learned how to 
+1. Access a Column
+2. How to access Multiple columns
+3. How to remove a column
+
