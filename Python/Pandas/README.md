@@ -37,7 +37,7 @@ Further we learned how to
 
 Then we explored how to do `Conditional Selection` and `Multiple Conditional Selection` in data frame.
 
-## **Missing Data / Values**
+## **3. Missing Data / Values**
 
 ### 1. Finding Missing Values
 
@@ -67,7 +67,7 @@ my_df.fillna(0) #This will fill all null values with zero
 my_df.fillna(values) # Provide a dict (values) for storing values for null values
 ```
 
-## Merging Joining and Concatination
+## **4. Merging Joining and Concatination**
 
 ### 1. Merging
 
@@ -93,3 +93,23 @@ Used for joining two dataframes,
 ``` python
 df1.join(df2) # This will join both and df1 comes first then df2 will come
 df2.join(df1) # This will join both & df1 comes first then df2 will come
+```
+
+## **5. Group By Aggregation**
+
+### 1. Group By
+
+A function used for grouping data based on groups. we can do the follwing things
+```python
+my_df.groupby('Category')['Sales'].sum() # grouping based on group 'Category'
+my_df.groupby(['Category', 'Store'])['Sales'].sum() # grouping based on multiple groups (Columns)
+```
+
+### 2. Aggregation
+
+This means combining certain values and then providing a combined value of them, and it can provide multiple values as well like in the following code...
+```python
+my_df['Sales'].mean() # this will provide only mean
+my_df['Sales'].agg(['mean', 'sum', 'max', 'min']) # this will provide mean, sum, max, min
+```
+
