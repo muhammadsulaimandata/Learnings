@@ -26,4 +26,8 @@ Further we learned how to
 1. Access a Column
 2. How to access Multiple columns
 3. How to remove a column
+4. How to remove multiple columns
+5. How to access a row
+
+Then we explored how to do `Conditional Selection` and `Multiple Conditional Selection` in data frame.
 
