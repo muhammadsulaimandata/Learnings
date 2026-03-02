@@ -44,9 +44,9 @@ Then we explored how to do `Conditional Selection` and `Multiple Conditional Sel
 The first thing we've to do, is to find the missing data or values, and we can do that with the help of `isna()` function. We can also do some other thing using the following functions
 
 ```python
-1. my_df.isna() #Give us True/False for missing and non missing values
-2. my_df.isna().sum() #Gives us the how many null values are there in each row.
-3. my_df.isna().any() #It will return whether each row has all null or data ?
+my_df.isna() #Give us True/False for missing and non missing values
+my_df.isna().sum() #Gives us the how many null values are there in each row.
+my_df.isna().any() #It will return whether each row has all null or data ?
 ```
 
 ### 2. Deleting Missing Data
@@ -54,8 +54,8 @@ The first thing we've to do, is to find the missing data or values, and we can d
 We can delete the missing data using the following ways
 
 ```python
-1. my_df.dropna() # This will simply drop the rows having null data
-2. my_df.dropna(thresh = 3) # This will drop rows which have 3 or more non-null values
+my_df.dropna() # This will simply drop the rows having null data
+my_df.dropna(thresh = 3) # This will drop rows which have 3 or more non-null values
 ```
 
 ### 3. Filling Missing Data
@@ -63,8 +63,8 @@ We can delete the missing data using the following ways
 We can fill the missing values with following methods
 
 ``` python
-1. my_df.fillna(0) #This will fill all null values with zero
-2. my_df.fillna(values) # Provide a dict (values) for storing values for null values
+my_df.fillna(0) #This will fill all null values with zero
+my_df.fillna(values) # Provide a dict (values) for storing values for null values
 ```
 
 ## Merging Joining and Concatination
