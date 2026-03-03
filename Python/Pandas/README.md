@@ -113,3 +113,22 @@ my_df['Sales'].mean() # this will provide only mean
 my_df['Sales'].agg(['mean', 'sum', 'max', 'min']) # this will provide mean, sum, max, min
 ```
 
+## **6. Pivot Tables and Cross Tab**
+
+### 1. Pivot Tables
+
+This is used for doing aggregation in data like,
+
+```python
+pd.pivot_table(df, values = 'Sales', index = 'Product', columns = 'Region')
+pivot2 = pd.pivot_table(df, values = ['Sales', 'Units'], index = 'Region', columns = 'Product', aggfunc='sum')
+pivot2
+```
+
+### 2. Cross Tab
+
+Used for count of data like
+
+```python
+print(pd.crosstab(df['Product'], df['Region']))
+```
